@@ -1,1 +1,143 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+header div {
+  position: relative;
+  background: #1c1c1c 0% 0% no-repeat padding-box;
+  opacity: 1;
+  height: 72px;
+}
+
+header img {
+  position: absolute;
+  top: 10px;
+  left: 147px;
+  width: 119px;
+  height: 52px;
+  opacity: 1;
+}
+
+nav {
+  top: 26px;
+  color: #ffffff;
+  display: flex;
+  position: absolute;
+  left: 808px;
+}
+nav p {
+  margin: 0px 21px;
+}
+
+main {
+  position: relative;
+  color: #ffffff;
+  background-image: url(/assets/photo-1480714378408-67cf0d13bc1b@2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -200px;
+  width: 1400px;
+  height: 639px;
+  margin-top: 72px;
+  box-shadow: inset 0 0 0 2000px rgba(25, 28, 28, 0.63);
+}
+
+div.leftField img,
+div.leftField h3,
+div.leftField p,
+div.leftField button {
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+}
+
+div.leftField img:first-child {
+  top: 66px;
+  left: 150px;
+  width: 247px;
+  height: 108px;
+  opacity: 1;
+}
+
+div.leftField h3 {
+  top: 196px;
+  left: 147px;
+  width: 426px;
+  height: 87px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 36px;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+div.leftField img:nth-of-type(2) {
+  top: 304px;
+  left: 142px;
+  width: 84px;
+  height: 22px;
+  background: transparent url(/assets/divider_white_u72.png) 0% 0% no-repeat
+    padding-box;
+  opacity: 1;
+}
+
+div.leftField p {
+  top: 350px;
+  left: 150px;
+  width: 651px;
+  height: 65px;
+  text-align: left;
+  font: normal normal 600 16px Montserrat;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+div.leftField button {
+  top: 458px;
+  left: 150px;
+  width: 135px;
+  height: 42px;
+  border: 2px solid #ffffff;
+  opacity: 1;
+  background: none;
+  color: #ffffff;
+}
+
+div.formField {
+  color: #1c1c1c;
+  position: absolute;
+  top: 75px;
+  left: 892px;
+  width: 360px;
+  height: 425px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 20px #00000029;
+  opacity: 1;
+  border-radius: 5px;
+}
+
+div.formField div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 57px;
+  background: #f5f5f5 0% 0% no-repeat padding-box;
+  border-radius: 5px 5px 0px 0px;
+}
+div.formField div p {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0px;
+}
