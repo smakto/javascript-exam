@@ -279,10 +279,46 @@ section img {
 /* Second page - desert */
 
 div.backgroundDesert {
-  background-image: url(/assets/photo-1480714378408-67cf0d13bc1b@2x.png);
-  background-repeat: no-repeat;
+  height: 595px;
+  background-image: linear-gradient(
+      270deg,
+      rgba(102, 150, 226, 0.42) 0%,
+      rgba(226, 120, 102, 0.42) 100%
+    ),
+    url(/assets/christoffer-engstrom-503481-unsplash@2x.png);
+  /* background-repeat: no-repeat; */
   background-size: cover;
-  background-position-y: -200px;
-  box-shadow: inset 0 0 0 2000px rgba(25, 28, 28, 0.63);
+  background-position-y: -330px;
   width: 100%;
+  /* box-shadow: inset 0 0 0 2000px rgba(25, 28, 28, 0.63); */
+}
+
+div.backgroundDesert article {
+  width: 1400px;
+  position: relative;
+}
+
+div.backgroundDesert article div {
+  position: absolute;
+}
+
+div.tabs {
+  display: flex;
+  flex-direction: column;
+  left: 151px;
+  top: 127px;
+}
+
+div.tabs button {
+  color: #ffffff;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 21px;
+  background-color: #e27866;
+  border: none;
+}
+div.tabs button p {
+  transform: rotate(-50deg);
+  font-size: 14px;
+  font-weight: 600;
 }
