@@ -294,6 +294,7 @@ div.backgroundDesert {
 div.backgroundDesert article {
   width: 1400px;
   position: relative;
+  margin: 0 auto;
 }
 
 div.backgroundDesert article > div {
@@ -348,26 +349,50 @@ div.tabsTextField p {
 }
 .item3 {
   grid-area: third;
-  border: 1px solid black;
-  background-color: aqua;
-  height: 100px;
-  width: 110px;
+  height: 177px;
+  width: 337px;
 }
 
 .item1,
 .item2 {
-  border: 1px solid black;
-  background-color: aqua;
-  height: 50px;
-  width: 50px;
+  height: 168px;
+  width: 168px;
 }
 
 div.tabsImages {
   left: 890px;
   top: 114px;
   display: grid;
-  gap: 10px;
   grid-template-areas:
     "first second"
     "third third";
+}
+
+div.tabsImages img {
+  width: 100%;
+}
+
+/* Juodas trecias page */
+/* Juodas trecias page */
+/* Juodas trecias page */
+/* Juodas trecias page */
+
+div.blackPage {
+  background: #1c1c1c;
+  width: 100%;
+  height: 596px;
+}
+
+div.blackPage div {
+  position: relative;
+  width: 1400px;
+  margin: 0 auto;
+}
+
+div.blackPage div img {
+  position: absolute;
+  height: 170px;
+  width: 389px;
+  top: 213px;
+  left: 210px;
 }
