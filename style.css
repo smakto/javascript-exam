@@ -383,16 +383,81 @@ div.blackPage {
   height: 596px;
 }
 
-div.blackPage div {
+div.blackPage div.blackPageMain {
   position: relative;
   width: 1400px;
   margin: 0 auto;
 }
 
-div.blackPage div img {
+div.blackPage div.blackPageMain img.blackLogo {
   position: absolute;
   height: 170px;
   width: 389px;
   top: 213px;
   left: 210px;
+}
+
+div.blackPage div.blackPageMain div.blackPageRight {
+  position: absolute;
+  top: 90px;
+  left: 767px;
+  color: #ffffff;
+  width: 465px;
+}
+
+div.blackPage div.blackPageMain div.blackPageRight h2 {
+  width: 314px;
+  height: 80px;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+div.blackPage div.blackPageMain div.blackPageRight img {
+  width: 200px;
+  height: 2px;
+  margin: 27px 0px 27px 0px;
+}
+
+div.blackPage div.blackPageMain div.blackPageRight p {
+  letter-spacing: 0px;
+  font-size: 14px;
+  margin: 0px;
+}
+
+div.orangeCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  background-color: #e27866;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+}
+
+div.blackPageTitles {
+  margin-top: 43px;
+}
+
+div.blackTitleFields {
+  display: flex;
+  margin-bottom: 36px;
+}
+
+div.blackTitleFields h5 {
+  margin: 0px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+div.blackTitleFields p {
+  margin: 6px 0px 0px 0px;
+  font-size: 14px;
+  letter-spacing: 0px;
+}
+
+div.blackTitleFields div:nth-of-type(2) {
+  margin-left: 19px;
 }
