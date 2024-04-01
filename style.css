@@ -695,6 +695,43 @@ div.reviewPage {
   height: 591px;
 }
 
+div.reviewPageMainContainer {
+  position: relative;
+  width: 1400px;
+  margin: 0 auto;
+}
+
+div.reviewPageMainContainer h2 {
+  margin: 0;
+  position: absolute;
+  top: 67px;
+  left: 353px;
+  letter-spacing: 0px;
+  color: #1c1c1c;
+  font-size: 36px;
+  font-weight: 600;
+  width: 696px;
+  text-align: center;
+}
+
+div.reviewPageMainContainer div.blueDivider {
+  width: 64px;
+  height: 2px;
+  position: absolute;
+  top: 142px;
+  left: 668px;
+  background-color: #6696e2;
+}
+
+div.reviewPageMainContainer div.reviewsContainer {
+  position: absolute;
+  top: 202px;
+  left: 171px;
+  width: 1057px;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Contact page */
 /* Contact page */
 /* Contact page */
