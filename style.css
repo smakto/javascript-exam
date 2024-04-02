@@ -312,6 +312,10 @@ div.tabs button {
   background-color: #e27866;
   border: none;
 }
+
+div.tabs button:hover {
+}
+
 div.tabs button p {
   transform: rotate(-50deg);
   font-size: 14px;
@@ -942,4 +946,11 @@ footer h4 {
   opacity: 50%;
   font-weight: normal;
   font-size: 18px;
+}
+
+/* Misc */
+
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
