@@ -309,8 +309,15 @@ div.tabs button {
   height: 100px;
   width: 100px;
   margin-bottom: 21px;
-  background-color: #e27866;
   border: none;
+}
+
+div.tabs button:first-of-type {
+  background-color: #e27866;
+}
+
+div.tabs button:not(:first-of-type) {
+  background-color: #a37169;
 }
 
 div.tabs button:hover {
@@ -344,14 +351,17 @@ div.tabsTextField p {
 
 .item1 {
   grid-area: first;
+  position: relative;
 }
 .item2 {
   grid-area: second;
+  position: relative;
 }
 .item3 {
   grid-area: third;
   height: 177px;
   width: 337px;
+  position: relative;
 }
 
 .item1,
@@ -374,11 +384,23 @@ div.tabsImages img {
 }
 
 .item1:hover,
-.item2.hover,
+.item2:hover,
 .item3:hover {
   cursor: url(assets/description-cursor-icon-with-shadow-32.png), pointer;
 }
 
+div.tabsImages p {
+  margin: 0;
+  position: absolute;
+  top: 72px;
+  left: 45px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+div.tabsImages .item3 p {
+  left: 120px;
+}
 /* Juodas trecias page */
 /* Juodas trecias page */
 /* Juodas trecias page */
