@@ -1,3 +1,5 @@
+///// TABS
+
 let tabButtons = document.querySelectorAll("article div.tabs button");
 
 function buttonsBlur() {
@@ -37,7 +39,7 @@ tabButtons[1].addEventListener("click", (event) => {
   tabsText.innerHTML = `<p>
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
       doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
       <br />
       <br />
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
@@ -50,7 +52,7 @@ tabButtons[2].addEventListener("click", (event) => {
     "Daug kas galvoja, kad Lorem Ipsum - tai vien tik atsitiktinai surinktas tekstas, bet taip nėra.";
 
   tabsText.innerHTML = `<p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         <br />
         <br />
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -81,3 +83,59 @@ hoveredDivs.forEach((item) =>
 );
 
 hideText();
+
+///// Form validation
+
+let myForms = [document.forms[0], document.forms[1]];
+
+myForms.forEach((form) => {
+  form.addEventListener("submit", (event) => {
+    let letters = /^[A-Za-zĄąČčĘęĖėĮįŠšŲųŪūŽž]*$/;
+    let numbers = /^[0-9()+]*$/;
+
+    let firstNameValue = form.elements.firstName.value;
+    let lastNameValue = form.elements.lastName.value;
+    let phoneNumValue = form.elements.phoneNum.value;
+
+    console.log(numbers.test(phoneNumValue));
+
+    if (
+      firstNameValue.length === 0 ||
+      lastNameValue.length === 0 ||
+      phoneNumValue.length === 0
+    ) {
+      event.preventDefault();
+      alert("Please enter all required information.");
+    } else if (!letters.test(firstNameValue)) {
+      event.preventDefault();
+      form.elements.firstName.style.color = "red";
+      alert("Please enter valid first name. Invalid symbols detected.");
+    } else if (!letters.test(lastNameValue)) {
+      event.preventDefault();
+      form.elements.lastName.style.color = "red";
+      alert("Please enter valid last name. Invalid symbols detected.");
+    } else if (!numbers.test(phoneNumValue)) {
+      event.preventDefault();
+      form.elements.phoneNum.style.color = "red";
+      alert("Please enter valid phone number. Invalid symbols detected.");
+    } else {
+      alert("Form submitted!");
+    }
+  });
+});
+
+let inputs1 = document.querySelectorAll("main form input:nth-of-type(-n+3)");
+let inputs2 = document.querySelectorAll("form.inquiryForm > input");
+
+console.log(inputs1);
+console.log(inputs2);
+
+let inputFields = [inputs1, inputs2];
+
+inputFields.forEach((form) => {
+  form.forEach((input) => {
+    input.addEventListener("focus", (event) => {
+      input.style.color = "#1c1c1c";
+    });
+  });
+});
