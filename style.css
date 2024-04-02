@@ -314,6 +314,7 @@ div.tabs button {
 }
 
 div.tabs button:hover {
+  cursor: url(assets/description-cursor-icon-with-shadow-32.png), pointer;
 }
 
 div.tabs button p {
@@ -370,6 +371,12 @@ div.tabsImages {
 
 div.tabsImages img {
   width: 100%;
+}
+
+.item1:hover,
+.item2.hover,
+.item3:hover {
+  cursor: url(assets/description-cursor-icon-with-shadow-32.png), pointer;
 }
 
 /* Juodas trecias page */
