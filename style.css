@@ -1062,4 +1062,49 @@ a {
   section img {
     height: 20px;
   }
+
+  /* Second page - desert */
+
+  div.backgroundDesert {
+    background-size: auto;
+    height: auto;
+  }
+
+  div.backgroundDesert article {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px;
+  }
+
+  div.backgroundDesert article > div {
+    position: static;
+  }
+
+  div.tabs {
+    flex-direction: row;
+  }
+
+  div.tabsTextField {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  div.tabsTextField h2,
+  div.tabsTextField p {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    height: 150px;
+  }
+
+  div.tabs button {
+    margin: 25px;
+  }
+
+  div.tabsImages {
+    margin-bottom: 25px;
+  }
 }
