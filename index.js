@@ -127,9 +127,6 @@ myForms.forEach((form) => {
 let inputs1 = document.querySelectorAll("main form input:nth-of-type(-n+3)");
 let inputs2 = document.querySelectorAll("form.inquiryForm > input");
 
-console.log(inputs1);
-console.log(inputs2);
-
 let inputFields = [inputs1, inputs2];
 
 inputFields.forEach((form) => {
@@ -139,3 +136,5 @@ inputFields.forEach((form) => {
     });
   });
 });
+
+////// Bubbles

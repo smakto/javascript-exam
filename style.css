@@ -746,7 +746,7 @@ div.reviewPageMainContainer h2 {
   text-align: center;
 }
 
-div.reviewPageMainContainer div.blueDivider {
+div.blueDivider {
   width: 64px;
   height: 2px;
   position: absolute;
@@ -755,7 +755,7 @@ div.reviewPageMainContainer div.blueDivider {
   background-color: #6696e2;
 }
 
-div.reviewPageMainContainer div.reviewsContainer {
+div.reviewsContainer {
   position: absolute;
   top: 202px;
   left: 171px;
@@ -820,7 +820,7 @@ div.reviewBottom p {
   margin: 0px;
 }
 
-div.reviewPageMainContainer div.reviewPageBubbles {
+div.reviewPageBubbles {
   position: absolute;
   top: 523px;
   left: 650px;
@@ -828,7 +828,7 @@ div.reviewPageMainContainer div.reviewPageBubbles {
   flex-direction: row;
 }
 
-div.reviewPageMainContainer div.reviewPageBubbles div {
+div.reviewPageBubbles div {
   margin-right: 20px;
   height: 10px;
   width: 10px;
@@ -836,7 +836,7 @@ div.reviewPageMainContainer div.reviewPageBubbles div {
   border: 1px solid #e27866;
 }
 
-div.reviewPageMainContainer div.reviewPageBubbles div:nth-of-type(2) {
+div.reviewPageBubbles div:nth-of-type(2) {
   background-color: #e27866;
 }
 
@@ -860,7 +860,6 @@ div.contactPositionDiv {
 
 div.contactPageMainContainer {
   position: absolute;
-  /* position: absolute; */
   width: 390px;
   left: 505px;
   top: 70px;
@@ -950,7 +949,7 @@ footer {
   background-color: #1c1c1c;
 }
 
-footer div.footerMainContainer {
+div.footerMainContainer {
   position: relative;
   width: 1400px;
   margin: 0 auto;
@@ -1233,5 +1232,69 @@ a {
 
   div.priceBot {
     padding: 25px;
+  }
+
+  /* Reviews page */
+
+  div.reviewPage {
+    height: auto;
+  }
+
+  div.reviewPage h2 {
+    width: auto;
+    margin-top: 45px;
+  }
+
+  div.blueDivider {
+    margin: 50px auto;
+  }
+  div.reviewPageMainContainer {
+    width: auto;
+  }
+
+  div.reviewPageMainContainer h2,
+  div.blueDivider,
+  div.reviewsContainer,
+  div.reviewPageBubbles {
+    position: static;
+  }
+
+  div.reviewsContainer {
+    margin: 0 auto 25px auto;
+    width: auto;
+    width: 90%;
+  }
+
+  div.reviewField {
+    width: 30%;
+  }
+
+  /* Contacts */
+
+  div.contactPage {
+    height: auto;
+  }
+
+  div.contactPositionDiv {
+    width: auto;
+  }
+
+  div.contactPageMainContainer {
+    position: static;
+  }
+
+  div.reviewPageBubbles {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+  }
+
+  /* Footer */
+  div.footerMainContainer {
+    width: auto;
+  }
+
+  footer div i {
+    margin-right: 50px;
   }
 }
