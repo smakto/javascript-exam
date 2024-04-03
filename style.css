@@ -1146,4 +1146,43 @@ a {
   div.blackPageRight > p {
     text-align: center;
   }
+
+  /* Baltas ketvirtas page */
+
+  div.whitePage {
+    height: auto;
+  }
+
+  div.whiteMainContainer {
+    width: auto;
+  }
+
+  div.whiteTop,
+  div.whiteBot {
+    position: static;
+  }
+
+  div.whiteTop {
+    width: auto;
+    margin: 50px auto 25px auto;
+  }
+
+  div.whiteBot {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  div.whiteBot div {
+    width: 50%;
+  }
+
+  div.whiteBot p {
+    margin-top: 15px;
+  }
+
+  div.orangeCircle2 {
+    margin: 35px auto 0px auto;
+  }
 }

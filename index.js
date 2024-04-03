@@ -59,7 +59,7 @@ tabButtons[2].addEventListener("click", (event) => {
       </p>`;
 });
 
-/////////
+///////// Picture text on hover
 
 let textToHide = document.querySelectorAll("div.tabsImages p");
 let hoveredDivs = document.querySelectorAll("div.tabsImages div");
