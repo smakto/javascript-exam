@@ -1185,4 +1185,53 @@ a {
   div.orangeCircle2 {
     margin: 35px auto 0px auto;
   }
+
+  /* Price page */
+
+  div.pricePage {
+    height: 100%;
+  }
+
+  div.priceMainContainer {
+    width: auto;
+    height: 100%;
+  }
+
+  div.priceTop,
+  div.priceCard {
+    position: static;
+  }
+
+  div.priceTop {
+    width: auto;
+    text-align: center;
+    padding-top: 45px;
+  }
+
+  div.priceCard {
+    width: 50%;
+    flex-direction: row;
+    justify-content: center;
+    margin: 25px auto;
+  }
+
+  div.priceCardTop {
+    height: auto;
+    width: 50%;
+    border-radius: 5px 0px 0px 5px;
+  }
+
+  div.priceCardMid {
+    width: 0;
+    color: #6696e2;
+  }
+
+  div.priceCardBot {
+    border-radius: 0px 5px 5px 0px;
+    width: 50%;
+  }
+
+  div.priceBot {
+    padding: 25px;
+  }
 }
