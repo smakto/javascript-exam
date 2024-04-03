@@ -416,13 +416,13 @@ div.blackPage {
   height: 596px;
 }
 
-div.blackPage div.blackPageMain {
+div.blackPageMain {
   position: relative;
   width: 1400px;
   margin: 0 auto;
 }
 
-div.blackPage div.blackPageMain img.blackLogo {
+img.blackLogo {
   position: absolute;
   height: 170px;
   width: 389px;
@@ -430,7 +430,7 @@ div.blackPage div.blackPageMain img.blackLogo {
   left: 210px;
 }
 
-div.blackPage div.blackPageMain div.blackPageRight {
+div.blackPageRight {
   position: absolute;
   top: 90px;
   left: 767px;
@@ -438,7 +438,7 @@ div.blackPage div.blackPageMain div.blackPageRight {
   width: 465px;
 }
 
-div.blackPage div.blackPageMain div.blackPageRight h2 {
+div.blackPageRight h2 {
   width: 314px;
   height: 80px;
   font-size: 30px;
@@ -446,13 +446,13 @@ div.blackPage div.blackPageMain div.blackPageRight h2 {
   margin: 0px;
 }
 
-div.blackPage div.blackPageMain div.blackPageRight img {
+div.blackPageRight img {
   width: 200px;
   height: 2px;
   margin: 27px 0px 27px 0px;
 }
 
-div.blackPage div.blackPageMain div.blackPageRight p {
+div.blackPageRight p {
   letter-spacing: 0px;
   font-size: 14px;
   margin: 0px;
@@ -1075,7 +1075,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px 0px;
+    /* margin: 50px 0px; */
   }
 
   div.backgroundDesert article > div {
@@ -1095,16 +1095,55 @@ a {
   div.tabsTextField p {
     width: 75%;
     margin: 0 auto;
-    margin-bottom: 25px;
-    margin-top: 25px;
     height: 150px;
   }
 
+  div.tabsTextField h2 {
+    margin-top: 25px;
+  }
+  div.tabsTextField p {
+    margin-bottom: 25px;
+  }
+
   div.tabs button {
-    margin: 25px;
+    margin: 50px 15px;
   }
 
   div.tabsImages {
     margin-bottom: 25px;
+  }
+
+  /* Juodas trecias page */
+
+  div.blackPage {
+    height: auto;
+  }
+
+  div.blackPageMain {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img.blackLogo,
+  div.blackPageRight {
+    position: static;
+  }
+
+  img.blackLogo {
+    margin: 50px 0px;
+  }
+
+  div.blackPageRight h2 {
+    width: auto;
+    text-align: center;
+  }
+  div.blackPageRight img {
+    width: 100%;
+  }
+
+  div.blackPageRight > p {
+    text-align: center;
   }
 }
