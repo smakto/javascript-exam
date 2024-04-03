@@ -138,3 +138,12 @@ inputFields.forEach((form) => {
 });
 
 ////// Bubbles
+
+/// Burger
+
+document.querySelector(".burger").addEventListener("click", function () {
+  document.querySelector(".burgerItems").style.display =
+    document.querySelector(".burgerItems").style.display == "none"
+      ? "block"
+      : "none";
+});
