@@ -982,8 +982,63 @@ footer h4 {
 }
 
 /* Misc */
+/* Misc */
+/* Misc */
 
 a {
   text-decoration: none;
   color: #ffffff;
+}
+
+/* Responsive design  */
+/* Responsive design  */
+/* Responsive design  */
+
+@media screen and (max-width: 1399px) {
+  /* HEADER */
+
+  header div {
+    width: auto;
+  }
+
+  /* Main @ City */
+
+  div.backgroundCity {
+    background-size: auto;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    align-items: center;
+  }
+
+  div.leftField img,
+  div.leftField h3,
+  div.leftField p,
+  div.leftField button,
+  div.rightField {
+    position: static;
+    margin: 15px 0px;
+  }
+
+  div.leftField h3,
+  div.leftField p {
+    text-align: center;
+  }
+
+  div.leftField {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.formField {
+    margin-bottom: 50px;
+  }
+
+  /* Main @ City */
 }
