@@ -1040,5 +1040,26 @@ a {
     margin-bottom: 50px;
   }
 
-  /* Main @ City */
+  /* Socials */
+
+  section {
+    width: auto;
+  }
+
+  section div {
+    position: static;
+    margin: 0 auto;
+  }
+
+  section div:first-child {
+    width: 40%;
+  }
+
+  section div:nth-of-type(2) {
+    width: 25%;
+  }
+
+  section img {
+    height: 20px;
+  }
 }
