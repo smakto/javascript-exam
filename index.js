@@ -149,7 +149,9 @@ document.querySelector(".burger").addEventListener("click", function () {
 ////// Bubbles
 
 let bubbleSelectors = document.querySelectorAll("div.reviewPageBubbles div");
-let reviewBubbleFields = document.querySelectorAll(".blueBubble");
+let reviewBubbleFields = document.querySelectorAll(
+  ".blueBubble div.bubbleText"
+);
 let reviewName = document.querySelectorAll("div.reviewField h4");
 let reviewPosition = document.querySelectorAll("div.reviewField p");
 
@@ -174,8 +176,8 @@ let reviewsObject = [
   },
 
   {
-    name: "Jeremy H.",
-    position: "Manager",
+    name: "LeBron J.",
+    position: "Basketball player",
     review:
       "222. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.",
   },
@@ -193,7 +195,7 @@ let reviewsObject = [
   },
 
   {
-    name: "Tony G.",
+    name: "Charles X.",
     position: "Freelancer",
     review:
       "333. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.",
@@ -212,18 +214,18 @@ let reviewsObject = [
   },
   {
     name: "Tony G.",
-    position: "Dancer",
+    position: "Poker player",
     review:
       "444. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.",
   },
   {
-    name: "Marius M.",
+    name: "Christiano R.",
     position: "Singer",
     review:
       "444. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.",
   },
   {
-    name: "John W.",
+    name: "Dr. Strange",
     position: "Florist",
     review:
       "444. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.",
