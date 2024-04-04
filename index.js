@@ -149,8 +149,9 @@ document.querySelector(".burger").addEventListener("click", function () {
 ////// Bubbles
 
 let bubbleSelectors = document.querySelectorAll("div.reviewPageBubbles div");
-
-console.log(bubbleSelectors);
+let reviewBubbleFields = document.querySelectorAll(".blueBubble");
+let reviewName = document.querySelectorAll("div.reviewField h4");
+let reviewPosition = document.querySelectorAll("div.reviewField p");
 
 let reviewsObject = [
   {
@@ -229,18 +230,35 @@ let reviewsObject = [
   },
 ];
 
-// bubbleSelectors.forEach((bubble) => {
-//   bubble.addEventListener("click", (event) => {
-//     bubble.forEach((bubbleButton) => {
-//       bubbleButton.style.backgroundColor = "#ffffff";
-//     });
-//     bubble.style.backgroundColor = "#e27866";
-//   });
-// });
-
 bubbleSelectors.forEach((bubbleDiv) => {
   bubbleDiv.addEventListener("click", (event) => {
     bubbleSelectors.forEach((item) => (item.style.backgroundColor = "#ffffff"));
     bubbleDiv.style.backgroundColor = "#e27866";
+
+    if (bubbleDiv.classList.contains("bubble1")) {
+      for (let i = 0; i < 3; i++) {
+        reviewBubbleFields[i].innerText = reviewsObject[i].review;
+        reviewName[i].innerText = reviewsObject[i].name;
+        reviewPosition[i].innerText = reviewsObject[i].position;
+      }
+    } else if (bubbleDiv.classList.contains("bubble2")) {
+      for (let i = 0; i < 3; i++) {
+        reviewBubbleFields[i].innerText = reviewsObject[i + 3].review;
+        reviewName[i].innerText = reviewsObject[i + 3].name;
+        reviewPosition[i].innerText = reviewsObject[i + 3].position;
+      }
+    } else if (bubbleDiv.classList.contains("bubble3")) {
+      for (let i = 0; i < 3; i++) {
+        reviewBubbleFields[i].innerText = reviewsObject[i + 6].review;
+        reviewName[i].innerText = reviewsObject[i + 6].name;
+        reviewPosition[i].innerText = reviewsObject[i + 6].position;
+      }
+    } else if (bubbleDiv.classList.contains("bubble4")) {
+      for (let i = 0; i < 3; i++) {
+        reviewBubbleFields[i].innerText = reviewsObject[i + 9].review;
+        reviewName[i].innerText = reviewsObject[i + 9].name;
+        reviewPosition[i].innerText = reviewsObject[i + 9].position;
+      }
+    }
   });
 });
