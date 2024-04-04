@@ -137,8 +137,6 @@ inputFields.forEach((form) => {
   });
 });
 
-////// Bubbles
-
 /// Burger
 
 document.querySelector(".burger").addEventListener("click", function () {
@@ -146,4 +144,103 @@ document.querySelector(".burger").addEventListener("click", function () {
     document.querySelector(".burgerItems").style.display == "none"
       ? "block"
       : "none";
+});
+
+////// Bubbles
+
+let bubbleSelectors = document.querySelectorAll("div.reviewPageBubbles div");
+
+console.log(bubbleSelectors);
+
+let reviewsObject = [
+  {
+    name: "Jeremy H.",
+    position: "HR specialist",
+    review:
+      "111. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.",
+  },
+  {
+    name: "Lucy F.",
+    position: "Freelancer",
+    review:
+      "111. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.",
+  },
+  {
+    name: "Johny B.",
+    position: "Software developer",
+    review:
+      "111. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.",
+  },
+
+  {
+    name: "Jeremy H.",
+    position: "Manager",
+    review:
+      "222. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.",
+  },
+  {
+    name: "John C.",
+    position: "Freelancer",
+    review:
+      "222. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.",
+  },
+  {
+    name: "Susan W.",
+    position: "Photographer",
+    review:
+      "222. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.",
+  },
+
+  {
+    name: "Tony G.",
+    position: "Freelancer",
+    review:
+      "333. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.",
+  },
+  {
+    name: "Marius M.",
+    position: "Driver",
+    review:
+      "333. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.",
+  },
+  {
+    name: "John W.",
+    position: "Contractor",
+    review:
+      "333. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.",
+  },
+  {
+    name: "Tony G.",
+    position: "Dancer",
+    review:
+      "444. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.",
+  },
+  {
+    name: "Marius M.",
+    position: "Singer",
+    review:
+      "444. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.",
+  },
+  {
+    name: "John W.",
+    position: "Florist",
+    review:
+      "444. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.",
+  },
+];
+
+// bubbleSelectors.forEach((bubble) => {
+//   bubble.addEventListener("click", (event) => {
+//     bubble.forEach((bubbleButton) => {
+//       bubbleButton.style.backgroundColor = "#ffffff";
+//     });
+//     bubble.style.backgroundColor = "#e27866";
+//   });
+// });
+
+bubbleSelectors.forEach((bubbleDiv) => {
+  bubbleDiv.addEventListener("click", (event) => {
+    bubbleSelectors.forEach((item) => (item.style.backgroundColor = "#ffffff"));
+    bubbleDiv.style.backgroundColor = "#e27866";
+  });
 });

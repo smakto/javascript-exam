@@ -873,7 +873,7 @@ div.reviewPageBubbles div {
   border: 1px solid #e27866;
 }
 
-div.reviewPageBubbles div:nth-of-type(2) {
+div.reviewPageBubbles div:nth-of-type(1) {
   background-color: #e27866;
 }
 
